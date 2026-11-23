@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adamidisch.github.io/darkshelter2/sitemap.xml

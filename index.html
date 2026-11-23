@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f1efe9">
+  <meta name="description" content="DARKSHELTER — a handmade analog photography studio in Moutoullas, Cyprus. Black-and-white film, darkroom printing and small-group workshops.">
+  <meta property="og:title" content="DARKSHELTER · Film. Paper. Mountain light.">
+  <meta property="og:description" content="Analog photography, handmade prints and small-group workshops in Moutoullas, Cyprus.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://adamidisch.github.io/darkshelter2/village.webp">
+  <meta property="og:url" content="https://adamidisch.github.io/darkshelter2/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://adamidisch.github.io/darkshelter2/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link id="studio-styles" rel="stylesheet" href="styles.css?v=058f58af947c">
+  <title>DARKSHELTER · Analog photography in Moutoullas</title>
+  <script type="module">
+    // Resolve the latest asset versions on every page load. No background polling.
+    const fallback = {"version": "ae2714e351ea", "assets": {"styles.css": "styles.css?v=058f58af947c", "studio-config.js": "studio-config.js?v=ecc0309ee556", "app.js": "app.js?v=6d366769b2b0"}};
+    const manifestUrl = new URL('version.json', location.href);
+    manifestUrl.search = '';
+    manifestUrl.hash = '';
+    async function latest() {
+      const response = await fetch(manifestUrl, {cache: 'no-store'});
+      if (!response.ok) throw new Error('Version manifest unavailable');
+      const value = await response.json();
+      if (!value.version || !value.assets) throw new Error('Invalid version manifest');
+      for (const key of ['styles.css', 'studio-config.js', 'app.js']) {
+        const url = new URL(value.assets[key], manifestUrl);
+        if (url.origin !== location.origin || url.pathname !== new URL(key, manifestUrl).pathname) throw new Error('Invalid asset URL');
+      }
+      return value;
+    }
+    let current;
+    try { current = await latest(); } catch { current = fallback; }
+    document.getElementById('studio-styles').href = current.assets['styles.css'];
+    for (const name of ['studio-config.js', 'app.js']) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = current.assets[name];
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+    let lastCheck = Date.now();
+    let checking = false;
+    async function checkForUpdate(force = false) {
+      if (document.hidden || checking || (!force && Date.now() - lastCheck < 15000)) return;
+      checking = true;
+      lastCheck = Date.now();
+      try {
+        const next = await latest();
+        if (next.version !== current.version) {
+          const url = new URL(location.href);
+          url.searchParams.set('v', next.version);
+          location.replace(url.href);
+        }
+      } catch {} finally { checking = false; }
+    }
+    addEventListener('focus', () => checkForUpdate());
+    addEventListener('visibilitychange', () => checkForUpdate());
+    addEventListener('pageshow', event => { if (event.persisted) checkForUpdate(true); });
+    addEventListener('online', () => checkForUpdate(true));
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main-content">Skip to content</a>
+  <div id="preview-banner" class="preview-banner"></div>
+  <header id="header"></header>
+  <main id="main-content" tabindex="-1"><noscript><div class="wrap"><h1>DARKSHELTER</h1><p>Analog photography, darkroom printing and workshops in Moutoullas, Cyprus. Enable JavaScript to browse the studio and its digital preview.</p></div></noscript></main>
+  <footer id="footer"></footer>
+  <dialog id="modal" aria-labelledby="modal-title"><button type="button" class="icon-btn modal-close" data-close aria-label="Close">×</button><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
