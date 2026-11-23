@@ -198,10 +198,10 @@ const theme=store.get('darkshelter.theme',matchMedia('(prefers-color-scheme:dark
 
 // Optional entrance banner. The original site underneath remains unchanged.
 let entryDismissed=false;
-try { entryDismissed=sessionStorage.getItem('darkshelter2.entry.dismissed')==='1'; } catch {}
+try { entryDismissed=sessionStorage.getItem('darkshelter2.entry.v3.dismissed')==='1'; } catch {}
 function dismissEntryBanner(){
  entryDismissed=true;
- try { sessionStorage.setItem('darkshelter2.entry.dismissed','1'); } catch {}
+ try { sessionStorage.setItem('darkshelter2.entry.v3.dismissed','1'); } catch {}
  const dialog=document.getElementById('entry-banner');
  if(dialog?.open)dialog.close();
  document.getElementById('main-content')?.focus({preventScroll:true});
@@ -211,7 +211,7 @@ function renderEntryBanner(){
  let dialog=document.getElementById('entry-banner');
  if(!dialog){dialog=document.createElement('dialog');dialog.id='entry-banner';dialog.className='entry-banner';dialog.setAttribute('aria-labelledby','entry-heading');dialog.addEventListener('cancel',event=>{event.preventDefault();dismissEntryBanner();});document.body.appendChild(dialog);}
  const el=state.lang==='el';
- dialog.innerHTML=`<div class="entry-top"><div class="entry-languages" role="group" aria-label="${el?'Γλώσσα':'Language'}"><button type="button" data-entry-language="el" aria-pressed="${el}">ΕΛ</button><span aria-hidden="true">/</span><button type="button" data-entry-language="en" aria-pressed="${!el}">EN</button></div><button type="button" class="entry-close" data-entry-enter aria-label="${el?'Κλείσιμο banner':'Close banner'}">×</button></div><div class="entry-content"><div class="entry-copy"><p class="entry-location">${el?'ΜΟΥΤΟΥΛΛΑΣ, ΚΥΠΡΟΣ':'MOUTOULLAS, CYPRUS'}</p><h2 id="entry-heading">${el?'Η φωτογραφία δεν τελειώνει στο κλικ.':'Photography doesn’t end when you press the shutter.'}</h2><p class="entry-tagline">${el?'Ασπρόμαυρο φιλμ · Εκτυπώσεις στο χέρι':'Black-and-white film · Darkroom prints'}</p></div><button type="button" class="entry-logo" data-entry-enter aria-label="${el?'Είσοδος στο Darkshelter':'Enter Darkshelter'}"><svg viewBox="0 0 300 350" fill="none" aria-hidden="true"><path d="M35 325V150a115 115 0 0 1 230 0v175" stroke="currentColor" stroke-width="25"/><path d="M78 325V157a72 72 0 0 1 144 0v168" stroke="currentColor" stroke-opacity=".4" stroke-width="4"/><circle cx="150" cy="242" r="27" fill="#f56558"/></svg><strong>Darkshelter</strong><span>${el?'Μπες στο site':'Enter the studio'}</span></button></div>`;
+ dialog.innerHTML=`<div class="entry-top"><div class="entry-languages" role="group" aria-label="${el?'Γλώσσα':'Language'}"><button type="button" data-entry-language="el" aria-pressed="${el}">ΕΛ</button><span aria-hidden="true">/</span><button type="button" data-entry-language="en" aria-pressed="${!el}">EN</button></div><button type="button" class="entry-close" data-entry-enter aria-label="${el?'Κλείσιμο banner':'Close banner'}">×</button></div><div class="entry-content"><div class="entry-copy"><p class="entry-location">${el?'ΜΟΥΤΟΥΛΛΑΣ, ΚΥΠΡΟΣ':'MOUTOULLAS, CYPRUS'}</p><h2 id="entry-heading">${el?'Η φωτογραφία δεν τελειώνει στο κλικ.':'Photography doesn’t end when you press the shutter.'}</h2><p class="entry-tagline">${el?'Ασπρόμαυρο φιλμ · Εκτυπώσεις στο χέρι':'Black-and-white film · Darkroom prints'}</p></div><button type="button" class="entry-logo" data-entry-enter aria-label="${el?'Είσοδος στο Darkshelter':'Enter Darkshelter'}"><span class="entry-mark"><svg viewBox="0 0 300 350" fill="none" aria-hidden="true"><path d="M35 325V150a115 115 0 0 1 230 0v175" stroke="currentColor" stroke-width="25"/><path d="M78 325V157a72 72 0 0 1 144 0v168" stroke="currentColor" stroke-opacity=".4" stroke-width="4"/><circle cx="150" cy="242" r="27" fill="#f56558"/></svg></span><strong>Darkshelter</strong><span>${el?'Μπες στο site':'Enter the studio'}</span></button></div><div class="entry-bottom"><span>${el?'Σκοτεινός θάλαμος · Μηχανές · Club F/65':'Darkroom · Cameras · Club F/65'}</span><span class="entry-frame-code" aria-hidden="true">DS / 001</span></div>`;
  if(!dialog.open)dialog.showModal();
 }
 document.addEventListener('click',event=>{
