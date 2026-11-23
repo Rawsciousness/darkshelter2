@@ -66,3 +66,13 @@ td{overflow-wrap:anywhere}
 @media(max-width:370px){.entry-content{padding-inline:24px;gap:14px}.entry-banner h2{font-size:30px}.entry-logo svg{width:116px;height:135px}.entry-logo strong{font-size:24px}.entry-tagline{max-width:24ch}.entry-location{font-size:12px}.entry-bottom{margin-inline:24px;font-size:12px}}
 @media(max-width:600px) and (max-height:700px){.entry-top{min-height:58px;padding-top:7px}.entry-content{height:calc(100% - 116px);padding-top:6px;padding-bottom:12px;gap:12px}.entry-banner h2{font-size:28px;max-width:18ch}.entry-location{margin-bottom:12px}.entry-tagline{margin-top:12px}.entry-logo svg{width:100px;height:116px}.entry-logo{gap:6px;padding:0}.entry-logo strong{font-size:22px}.entry-bottom{min-height:50px;padding-block:13px}}
 @media(prefers-reduced-motion:reduce){.entry-logo svg,.entry-mark::before{transition:none}.entry-logo:hover svg{transform:none}}
+
+/* Shared logo lockup: consistent arch, proportional to each surface. */
+.brand-lockup{display:inline-flex;align-items:center;gap:9px;text-decoration:none;white-space:nowrap;color:var(--ink)}
+.brand-lockup svg{display:block;flex:none;width:24px;height:29px}.brand-lockup .brand-word{font:600 22px/1.1 var(--sans);letter-spacing:-.045em}
+#header .brand-lockup{flex-shrink:0;min-height:44px}footer .brand-lockup{margin-bottom:18px}footer .brand-lockup svg{width:26px;height:31px}footer .brand-lockup .brand-word{font-size:24px}
+.confirmation-brand{margin-bottom:26px}.confirmation-brand svg{width:28px;height:34px}.confirmation-brand .brand-word{font-size:25px}.confirmation .success-mark{display:block}
+.mail-preview .mail-brand{margin-top:0}.mail-brand img{object-fit:contain;max-width:38px}
+@media(max-width:1180px){#header .brand-lockup{gap:7px}#header .brand-lockup .brand-word{font-size:21px}#header .brand-lockup svg{width:22px;height:27px}}
+@media(max-width:760px){#header .brand-lockup .brand-word{font-size:20px}#header .brand-lockup svg{width:20px;height:25px}#header .brand-lockup{gap:7px}}
+@media(max-width:380px){#header .brand-lockup .brand-word{font-size:18px}#header .brand-lockup svg{width:18px;height:23px}#header .brand-lockup{gap:6px}}
