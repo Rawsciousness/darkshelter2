@@ -76,3 +76,13 @@ td{overflow-wrap:anywhere}
 @media(max-width:1180px){#header .brand-lockup{gap:7px}#header .brand-lockup .brand-word{font-size:21px}#header .brand-lockup svg{width:22px;height:27px}}
 @media(max-width:760px){#header .brand-lockup .brand-word{font-size:20px}#header .brand-lockup svg{width:20px;height:25px}#header .brand-lockup{gap:7px}}
 @media(max-width:380px){#header .brand-lockup .brand-word{font-size:18px}#header .brand-lockup svg{width:18px;height:23px}#header .brand-lockup{gap:6px}}
+
+/* Compact language switch: active state is distinct from keyboard focus. */
+.entry-banner:focus{outline:none}
+.entry-languages{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid #f1efe728;border-radius:7px;background:#ffffff03;line-height:1}
+.entry-languages button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:40px;padding:9px 11px;border:1px solid transparent;border-radius:4px;font:500 13px/1 var(--sans);letter-spacing:.03em;color:#aaa69d;text-decoration:none;transition:background .15s,color .15s}
+.entry-languages button[aria-pressed=true]{background:#f1efe716;border-color:#f1efe71c;color:#f1efe7;font-weight:600;text-decoration:none}
+.entry-languages button:hover{background:#f1efe70b;color:#f1efe7}
+.entry-languages button[aria-pressed=true]:hover{background:#f1efe71c}
+.entry-languages button:focus-visible{outline:2px solid #f1efe7;outline-offset:-3px}
+@media(prefers-reduced-motion:reduce){.entry-languages button{transition:none}}
