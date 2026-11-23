@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adamidisch.github.io/darkshelter2/sitemap.xml
+Sitemap: https://rawsciousness.github.io/darkshelter2/sitemap.xml

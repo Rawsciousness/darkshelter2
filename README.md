@@ -1,6 +1,6 @@
 # DARKSHELTER 2
 
-Live: https://adamidisch.github.io/darkshelter2/
+Live: https://rawsciousness.github.io/darkshelter2/
 
 The original studio website is preserved. An optional entrance banner adds Greek/English selection. Close with X or Escape, or enter by clicking the logo. Dismissal lasts for the current browser tab. Direct article links skip the banner.
 
