@@ -30,8 +30,6 @@ window.STUDIO = {
     {id:'slr-c',format:'35mm',image:'cameras',position:'40% 55%',name:{el:'35mm SLR · Παράδειγμα Γ',en:'35mm SLR · Example C'},lenses:[{mm:'55mm f/1.4',type:'standard'},{mm:'85mm f/2',type:'portrait'}],day:20,weekend:38,deposit:0,available:true,
       description:{el:'Φωτεινός φακός για πορτρέτα και χαμηλό φως.',en:'A bright lens for portraits and low light.'}},
     {id:'medium',format:'120',image:'cameras',position:'53% 16%',name:{el:'Μεσαίο φορμά · 6×6',en:'Medium format · 6×6'},lenses:['80mm f/3.5'],day:35,weekend:65,deposit:250,available:true,
-      description:{el:'Το κάδρο φαίνεται από ψηλά. Δώδεκα τετράγωνες εικόνες ανά ρολό και χρόνος για κάθε λήψη.',en:'Look down into the finder. Twelve square frames per roll and a little more time for each one.'}},
-    {id:'large',format:'4×5',image:'large',position:'50% 45%',name:{el:'Μεγάλο φορμά · 4×5',en:'Large format · 4×5'},lenses:['150mm f/5.6'],day:45,weekend:85,deposit:300,available:false,
-      description:{el:'Τρίποδο, πανί εστίασης και ένα φύλλο φιλμ τη φορά. Διατίθεται και στο πλαίσιο του Club F/65.',en:'A tripod, a dark cloth and one sheet of film at a time. Also part of the Club F/65 experience.'}}
+      description:{el:'Το κάδρο φαίνεται από ψηλά. Δώδεκα τετράγωνες εικόνες ανά ρολό και χρόνος για κάθε λήψη.',en:'Look down into the finder. Twelve square frames per roll and a little more time for each one.'}}
   ]
 };
