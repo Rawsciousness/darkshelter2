@@ -23,11 +23,11 @@ window.STUDIO = {
     {id:'club-20270123',type:'club',date:'2027-01-23',start:'09:00',end:'17:00',capacity:6}
   ],
   cameras:[
-    {id:'slr-a',format:'35mm',image:'cameras',position:'20% 62%',name:{el:'35mm SLR · Παράδειγμα Α',en:'35mm SLR · Example A'},lenses:['50mm f/1.8','28mm f/2.8','135mm f/3.5'],day:18,weekend:35,deposit:0,available:true,
+    {id:'slr-a',format:'35mm',image:'cameras',position:'20% 62%',name:{el:'35mm SLR · Παράδειγμα Α',en:'35mm SLR · Example A'},lenses:[{mm:'50mm f/1.8',type:'standard'},{mm:'28mm f/2.8',type:'wide'},{mm:'135mm f/3.5',type:'tele'}],day:18,weekend:35,deposit:0,available:true,
       description:{el:'Χειροκίνητη εστίαση, μέτρηση φωτός και 36 καρέ. Μια καλή αρχή για να γνωρίσεις το φιλμ.',en:'Manual focus, a light meter and 36 frames. A good place to begin your relationship with film.'}},
-    {id:'slr-b',format:'35mm',image:'cameras',position:'83% 42%',name:{el:'35mm SLR · Παράδειγμα Β',en:'35mm SLR · Example B'},lenses:['50mm f/1.7','35mm f/2.8'],day:15,weekend:28,deposit:0,available:true,
+    {id:'slr-b',format:'35mm',image:'cameras',position:'83% 42%',name:{el:'35mm SLR · Παράδειγμα Β',en:'35mm SLR · Example B'},lenses:[{mm:'50mm f/1.7',type:'standard'},{mm:'35mm f/2.8',type:'wide'}],day:15,weekend:28,deposit:0,available:true,
       description:{el:'Ελαφριά και απλή. Μια μηχανή για μια βόλτα στο χωριό με ένα ρολό φιλμ.',en:'Light and simple. A camera for a walk through the village with a single roll of film.'}},
-    {id:'slr-c',format:'35mm',image:'cameras',position:'40% 55%',name:{el:'35mm SLR · Παράδειγμα Γ',en:'35mm SLR · Example C'},lenses:['55mm f/1.4','85mm f/2'],day:20,weekend:38,deposit:0,available:true,
+    {id:'slr-c',format:'35mm',image:'cameras',position:'40% 55%',name:{el:'35mm SLR · Παράδειγμα Γ',en:'35mm SLR · Example C'},lenses:[{mm:'55mm f/1.4',type:'standard'},{mm:'85mm f/2',type:'portrait'}],day:20,weekend:38,deposit:0,available:true,
       description:{el:'Φωτεινός φακός για πορτρέτα και χαμηλό φως.',en:'A bright lens for portraits and low light.'}},
     {id:'medium',format:'120',image:'cameras',position:'53% 16%',name:{el:'Μεσαίο φορμά · 6×6',en:'Medium format · 6×6'},lenses:['80mm f/3.5'],day:35,weekend:65,deposit:250,available:true,
       description:{el:'Το κάδρο φαίνεται από ψηλά. Δώδεκα τετράγωνες εικόνες ανά ρολό και χρόνος για κάθε λήψη.',en:'Look down into the finder. Twelve square frames per roll and a little more time for each one.'}},

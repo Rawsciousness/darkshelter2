@@ -88,3 +88,4 @@ td{overflow-wrap:anywhere}
 @media(prefers-reduced-motion:reduce){.entry-languages button{transition:none}}
 .camera-pick-row td{vertical-align:middle}.camera-select{width:auto;max-width:100%;min-width:12rem;min-height:40px;padding:8px 36px 8px 12px;font-size:14px}.camera-hint{margin:12px 0 0}.lens-pick{border:0;margin:0;padding:0;display:flex;flex-direction:column;align-items:flex-end;gap:6px}.lens-option{display:inline-flex;align-items:center;gap:8px;cursor:pointer}.lens-option input{width:18px;height:18px;min-height:0;padding:0;accent-color:var(--ink)}
 .camera-section td:first-child{white-space:nowrap;padding-right:16px}
+.lens-option strong{font-weight:500}.lens-type{color:var(--muted,#757570)}
