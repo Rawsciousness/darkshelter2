@@ -6,6 +6,7 @@ window.STUDIO = {
   name: 'DARKSHELTER',
   host: 'DARKSHELTER',
   location: {el:'Μουτουλλάς · Μαραθάσα · Κύπρος',en:'Moutoullas · Marathasa · Cyprus'},
+  meetingPlace: {el:'Καλοπαναγιώτης · Μαραθάσα · Κύπρος',en:'Kalopanayiotis · Marathasa · Cyprus'},
   email: 'hello@darkshelter.example',
   visitHours: {el:'Πέμπτη–Κυριακή · 10:00–18:00, με ραντεβού',en:'Thursday–Sunday · 10:00–18:00, by appointment'},
   mapUrl:'https://www.google.com/maps/search/?api=1&query=Moutoullas%2C%20Cyprus',
