@@ -12,16 +12,16 @@ window.STUDIO = {
   mapUrl:'https://www.google.com/maps/search/?api=1&query=Moutoullas%2C%20Cyprus',
   timezone:'Europe/Nicosia',
   defaultLanguage:'en',
-  prices:{club:145,
+  prices:{club:220,clubPrivate:380,
     /* Private 4-hour darkroom session, total per booking, keyed 'adults-children' (children aged 12+). */
     darkroomSessions:{'1-0':120,'2-0':170,'2-1':195,'2-2':220}},
   sessions:[
     {id:'dr-20261205',type:'darkroom',date:'2026-12-05',start:'10:00',end:'14:00',capacity:4},
-    {id:'club-20261212',type:'club',date:'2026-12-12',start:'09:00',end:'17:00',capacity:6},
+    {id:'club-20261212',type:'club',date:'2026-12-12',start:'09:00',end:'15:00',capacity:2},
     {id:'dr-20261219',type:'darkroom',date:'2026-12-19',start:'10:00',end:'14:00',capacity:4},
-    {id:'club-20270109',type:'club',date:'2027-01-09',start:'09:00',end:'17:00',capacity:6},
+    {id:'club-20270109',type:'club',date:'2027-01-09',start:'09:00',end:'15:00',capacity:2},
     {id:'dr-20270116',type:'darkroom',date:'2027-01-16',start:'10:00',end:'14:00',capacity:4},
-    {id:'club-20270123',type:'club',date:'2027-01-23',start:'09:00',end:'17:00',capacity:6}
+    {id:'club-20270123',type:'club',date:'2027-01-23',start:'09:00',end:'15:00',capacity:2}
   ],
   studioCamera:{id:'hasselblad-553elx',name:'Hasselblad 553 ELX',image:'cameras',position:'50% 50%'},
   cameras:[
