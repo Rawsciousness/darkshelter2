@@ -87,3 +87,4 @@ td{overflow-wrap:anywhere}
 .entry-languages button:focus-visible{outline:2px solid #f1efe7;outline-offset:-3px}
 @media(prefers-reduced-motion:reduce){.entry-languages button{transition:none}}
 .camera-group-label{margin-bottom:28px}.camera-hint{margin:12px 0 0}.camera-picker{display:grid;gap:8px;margin-bottom:26px}.camera-picker .m{font:400 12px/1.4 var(--mono,monospace);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.camera-select{width:100%;min-height:48px;font-size:16px}.camera-section td:first-child{white-space:nowrap;padding-right:16px}.camera-section td .lens-fixed,.camera-section td .lens-perspective{display:block}.camera-section td .lens-perspective{color:var(--muted);font-size:.9em}@media(min-width:761px){.camera-section .photo-wrap.alt{order:2}}
+.after-list{margin:22px 0 0;padding-left:1.1em}.after-list li{margin:0 0 10px}
