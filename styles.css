@@ -86,6 +86,4 @@ td{overflow-wrap:anywhere}
 .entry-languages button[aria-pressed=true]:hover{background:#f1efe71c}
 .entry-languages button:focus-visible{outline:2px solid #f1efe7;outline-offset:-3px}
 @media(prefers-reduced-motion:reduce){.entry-languages button{transition:none}}
-.camera-pick-row td{vertical-align:middle}.camera-select{width:auto;max-width:100%;min-width:12rem;min-height:40px;padding:8px 36px 8px 12px;font-size:14px}.camera-hint{margin:12px 0 0}.lens-pick{border:0;margin:0;padding:0;display:flex;flex-direction:column;align-items:flex-end;gap:6px}.lens-option{display:inline-flex;align-items:center;gap:8px;cursor:pointer}.lens-option input{width:18px;height:18px;min-height:0;padding:0;accent-color:var(--ink)}
-.camera-section td:first-child{white-space:nowrap;padding-right:16px}
-.lens-option strong{font-weight:500}.lens-type{color:var(--muted,#757570)}
+.camera-group-label{margin-bottom:28px}.camera-hint{margin:12px 0 0}.camera-picker{display:grid;gap:8px;margin-bottom:26px}.camera-picker .m{font:400 12px/1.4 var(--mono,monospace);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.camera-select{width:100%;min-height:48px;font-size:16px}.camera-section td:first-child{white-space:nowrap;padding-right:16px}.camera-section td .lens-fixed,.camera-section td .lens-perspective{display:block}.camera-section td .lens-perspective{color:var(--muted);font-size:.9em}@media(min-width:761px){.camera-section .photo-wrap.alt{order:2}}
