@@ -14,7 +14,7 @@ window.STUDIO = {
   defaultLanguage:'en',
   prices:{club:220,clubPrivate:380,
     /* Private 4-hour darkroom session, total per booking, keyed 'adults-children' (children aged 12+). */
-    darkroomSessions:{'1-0':120,'2-0':170,'2-1':195,'2-2':220}},
+    darkroomSessions:{'1-0':140,'2-0':190,'2-1':215,'2-2':240}},
   sessions:[
     {id:'dr-20261205',type:'darkroom',date:'2026-12-05',start:'10:00',end:'14:00',capacity:4},
     {id:'club-20261212',type:'club',date:'2026-12-12',start:'09:00',end:'15:00',capacity:2},
