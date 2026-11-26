@@ -93,3 +93,5 @@ td{overflow-wrap:anywhere}
 .dr-details h3{margin:0 0 12px}
 .dr-details h3.space-top{margin-top:36px}
 .dr-details td:first-child,.dr-details th:first-child{white-space:nowrap;padding-right:16px}
+
+@media(max-width:760px){.club-details>.c8{order:2}.club-details>.c4{order:1}}
