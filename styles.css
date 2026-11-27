@@ -101,3 +101,9 @@ td{overflow-wrap:anywhere}
 .about-invite{margin-top:14px;max-width:52ch;color:var(--char)}
 @media(min-width:761px){.about-intro>.c5>.photo{width:92%!important}}
 @media(max-width:760px){.about-statement{margin-top:28px;padding-top:22px}}
+.rent-dates{margin:8px 0 26px}.rent-dates-label{display:block;font-size:14px;margin-bottom:10px}.rent-calendar{margin-bottom:12px}
+.day.rent-open{color:var(--ink);border-color:var(--line);cursor:pointer}
+.day.in-range{background:#1717171a;color:var(--ink);border-color:transparent;opacity:1}
+.day.booked{text-decoration:line-through}
+.day.rent-open[aria-pressed=true]{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+.rent-calendar{max-width:440px}
