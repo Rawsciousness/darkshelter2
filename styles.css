@@ -97,3 +97,7 @@ td{overflow-wrap:anywhere}
 @media(max-width:760px){.club-details>.c8{order:2}.club-details>.c4{order:1}}
 .after-block>h2{margin-top:0}
 .about-story>p:first-child{margin-top:0}
+.about-statement{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2vw,27px);line-height:1.35;color:var(--ink);max-width:38ch;margin-top:40px;padding-top:28px;border-top:1px solid var(--line);text-wrap:balance}
+.about-invite{margin-top:14px;max-width:52ch;color:var(--char)}
+@media(min-width:761px){.about-intro>.c5>.photo{width:92%!important}}
+@media(max-width:760px){.about-statement{margin-top:28px;padding-top:22px}}
