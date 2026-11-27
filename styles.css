@@ -96,3 +96,4 @@ td{overflow-wrap:anywhere}
 
 @media(max-width:760px){.club-details>.c8{order:2}.club-details>.c4{order:1}}
 .after-block>h2{margin-top:0}
+.about-story>p:first-child{margin-top:0}
