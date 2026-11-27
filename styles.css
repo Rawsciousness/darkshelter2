@@ -107,3 +107,6 @@ td{overflow-wrap:anywhere}
 .day.booked{text-decoration:line-through}
 .day.rent-open[aria-pressed=true]{color:var(--paper);background:var(--ink);border-color:var(--ink)}
 .rent-calendar{max-width:440px}
+.page-head.booking-head{padding-top:clamp(40px,5vw,64px)}
+.booking-head h1{min-height:2.2em}
+@media(max-width:760px){.booking-head h1{min-height:3.3em}}
